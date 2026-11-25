@@ -1,0 +1,44 @@
+# Local project archive, settings, and runtime state
+/.local/
+/.agents/
+/.aws/
+/.codex/
+/.obsidian/
+/src/config_local.py
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+*.log
+csi_log.csv
+
+# Local captures, model exports, and downloaded firmware
+/data/*
+!/data/README.md
+/models/har_model.h5
+/models/har_model_backup.tflite
+/models/har_model_params_backup.json
+/models/har_model_tmp.tflite
+/firmware/
+
+# Python and Flutter generated files
+__pycache__/
+*.py[cod]
+*.mpy
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+/app/android/build/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
