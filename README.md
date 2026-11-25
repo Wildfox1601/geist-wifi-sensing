@@ -6,8 +6,8 @@ Geist uses an ESP32-S3 to measure how movement changes Wi-Fi Channel State Infor
 
 ## See Geist in action
 
-| Walking | Seated | Fall alert |
-| --- | --- | --- |
+| Walking                                                                                                                                     | Seated                                                                                                                               | Fall alert                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots%20and%20captures/app_walking_alert.jpeg" width="200" alt="Geist dashboard with a yellow Subject Walking status card"> | <img src="screenshots%20and%20captures/app_sit_alert.jpeg" width="200" alt="Geist dashboard with a blue Subject Seated status card"> | <img src="screenshots%20and%20captures/app_fall_alert.jpeg" width="200" alt="Geist dashboard with a red Critical Fall Detected card and a manual call button"> |
 
 - **Room demonstration** (46 seconds) shows the dashboard alongside staged walking, sitting, and fall activity. [Watch the project demo (MP4)](screenshots%20and%20captures/project_demo.mp4)
@@ -15,12 +15,12 @@ Geist uses an ESP32-S3 to measure how movement changes Wi-Fi Channel State Infor
 
 ## Try it
 
-| What you want to do | Start here |
-| --- | --- |
-| See the dashboard and event log on an Android device or emulator | [Run the scripted demo without an ESP32](docs/setup.md#demo-without-an-esp32) |
-| Classify activity from Wi-Fi in a room | [Connect an ESP32-S3 and run live sensing](docs/setup.md#live-sensing-with-an-esp32-s3) |
-| Set the bridge address, view events, or open Teach Geist | [Use the Flutter dashboard](app/README.md) |
-| Inspect the feature pipeline or train with your own recordings | [Activity recognition and training](docs/activity-recognition.md) |
+| What you want to do                                              | Start here                                                                              |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| See the dashboard and event log on an Android device or emulator | [Run the scripted demo without an ESP32](docs/setup.md#demo-without-an-esp32)           |
+| Classify activity from Wi-Fi in a room                           | [Connect an ESP32-S3 and run live sensing](docs/setup.md#live-sensing-with-an-esp32-s3) |
+| Set the bridge address, view events, or open Teach Geist         | [Use the Flutter dashboard](app/README.md)                                              |
+| Inspect the feature pipeline or train with your own recordings   | [Activity recognition and training](docs/activity-recognition.md)                       |
 
 ## How it works
 
@@ -52,20 +52,20 @@ The project timeline traces how the team went from capturing and labeling CSI to
 
 ## Repository map
 
-| Path | Contents |
-| --- | --- |
-| [`app/`](app/) | Flutter dashboard and Android demo |
-| [`backend/`](backend/) | Flask-SocketIO bridge, local Mosquitto config, and demo publisher |
-| [`src/`](src/) and [`me`](me) | Micro-ESPectre device code, host inference, and the device CLI |
-| [`tools/`](tools/) and [`models/`](models/) | CSI analysis, spectrogram generation, training, and model assets |
-| [`data/`](data/) | CSI recording formats and generated files |
-| [`docs/`](docs/) | Geist setup and model guides, plus upstream references |
-| [`screenshots and captures/`](screenshots%20and%20captures/) | Dashboard captures, hardware photos, diagrams, and demos |
-| [`tests/`](tests/) | Python tests for the inherited motion-sensing stack |
-| [`web/`](web/) | ESPectre browser monitor and theremin |
+| Path                                                         | Contents                                                          |
+| ------------------------------------------------------------ | ----------------------------------------------------------------- |
+| [`app/`](app/)                                               | Flutter dashboard and Android demo                                |
+| [`backend/`](backend/)                                       | Flask-SocketIO bridge, local Mosquitto config, and demo publisher |
+| [`src/`](src/) and [`me`](me)                                | Micro-ESPectre device code, host inference, and the device CLI    |
+| [`tools/`](tools/) and [`models/`](models/)                  | CSI analysis, spectrogram generation, training, and model assets  |
+| [`data/`](data/)                                             | CSI recording formats and generated files                         |
+| [`docs/`](docs/)                                             | Geist setup and model guides, plus upstream references            |
+| [`screenshots and captures/`](screenshots%20and%20captures/) | Dashboard captures, hardware photos, diagrams, and demos          |
+| [`tests/`](tests/)                                           | Python tests for the inherited motion-sensing stack               |
+| [`web/`](web/)                                               | ESPectre browser monitor and theremin                             |
 
 ## Credits and license
 
-Geist was developed by **Ragavi P**, **Samuel KC**, and **Tarun M**, under the supervision of **Veni G** in the Department of Computer Science and Engineering at Agni College of Technology.
+Geist was developed by **Tarun M**, **Ragavi P**, and  **Samuel KC**, under the supervision of **Veni G** in the Department of Computer Science and Engineering at Agni College of Technology.
 
 The inherited Micro-ESPectre code and its modifications carry the GNU GPL v3. See the [attribution and license scope](NOTICE.md) and the [full GPL v3 text](LICENSE).
